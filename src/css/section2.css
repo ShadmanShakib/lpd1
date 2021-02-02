@@ -1,0 +1,35 @@
+@keyframes rotate{
+    from{ transform: rotate(0deg);}
+    to {transform: rotate(359deg);}
+}
+
+.circle:hover{
+    animation: rotate 2s linear infinite;
+}
+.circle::before{
+    content: attr(div);
+    width: 13px;
+    height: 13px;
+    background-color: crimson;
+    position:absolute;
+    border-radius: 50%;
+    left: auto;
+    top:13px;
+    bottom: auto;
+    
+   
+    
+}
+
+.before{
+    color:white;
+
+}
+.before::before{
+  
+    content: attr(div);
+    width: 10px;
+    height: 10px;
+    background-color: crimson;
+    position:absolute;
+}
